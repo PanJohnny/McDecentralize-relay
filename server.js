@@ -43,6 +43,12 @@ app.get("/relay/:key/:role", async (req, res) => {
     res.json({ sdp });
 });
 
+app.get('/', (req, res) => {
+    res.send('This server is acting as a relay server for WebRTC connections created by McDecentralize.')
+});
+
 // Start the server locally (only needed for testing)
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Relay server running on port ${PORT}`));
+
+module.exports = app;
