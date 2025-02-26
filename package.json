@@ -1,10 +1,10 @@
 {
   "name": "mcdecrelay",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "api/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "node server.js"
+    "serve": "node api/index.js"
   },
   "keywords": [],
   "author": "",
